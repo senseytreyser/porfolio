@@ -1,0 +1,289 @@
+/*Цвет фона и основной шрифт*/
+body{
+	background: #000026;
+	color: #B3ADDC;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+/*Основная разметка страницы*/
+.container{
+	background: inherit;
+	margin: auto;
+    width: 800px;
+}
+#header{
+	height:160px;
+	position:relative;
+}
+#menu{
+	float: right;
+	background:inherit;
+	display: flex;
+	height:160px;
+}
+#logo{
+	position:absolute;
+	width: 160px;
+	height: 150px;
+	top:10px;
+	left:50px;
+	background: inherit;
+}
+#content{
+	width: 100%;
+	float: right;
+	background: inherit;
+	clear:both;
+}
+#footer{
+	clear:both;
+	width: 100%;
+	height:30px;
+	position:relative; 
+	background: inherit;
+	font-size: 0.9em;
+}
+
+/*Изменение ссылок*/
+#menu ul li a{
+	display:block;
+	height:100%;
+	color: #B3ADDC;
+	font-size: 15px;
+	text-decoration: none;
+}
+.link{
+	text-decoration: none;
+	text-align:center;
+	color: #afAaDa;
+}
+.link:hover{
+	color: yellow;
+}
+
+/*Переработка меню и списков*/
+#menu ul li{
+	width: 150px;
+	display:inline-block;	
+	margin: 0px 10px 0px;
+	border:2px solid #B3ADDC;
+	border-radius: 10px;
+	list-style-type: none;
+	text-align:center;
+}
+#menu ul li a{
+	display:inline-block;
+	height:100%;
+	padding:5px;
+	min-width:140px;
+}
+#menu ul li:hover{
+	background: #B3ADDC;
+}
+#menu ul li:hover a{
+	color: #000026;
+}
+#menu ul{
+	margin:auto;
+	padding:0px 20px 0px 0px;
+}
+
+/*Список на страничке каталога*/
+.list{
+	width: 100%;
+	height: 200px;
+	display: flex;
+}
+.list .element{
+	display:inline-block;
+	margin:auto;
+}
+.list .element a {
+	display:block;
+	margin-top:5px;
+}
+.list .element a img{
+	box-shadow: 0 0 15px white;
+	border-radius: 10px;
+}
+
+/*Заголовки*/
+h1{
+	color: #000026;
+	font-weight: 100;
+	background: #B3ADDC;
+	text-align: center;
+	font-size: 30px;
+}
+h1 a{
+	text-decoration: none;
+	color: #000026;
+}
+h3{
+	color: #000026;
+	font-weight: 500;
+	text-align: center;
+	background: #B3ADDC;
+}
+h2{
+	color: #000026;
+	font-weight: 500;
+	text-align: center;
+	background: #B3ADDC;
+	font-size: 18px;
+}
+
+/*Таблица характеристик*/
+table {
+	  font-size: 14px;
+	  width: 60%;
+	  border-collapse: collapse;
+	  margin: 0 auto;
+}
+td {
+	color: #B3ADDC;
+	padding: 10px 15px;
+}
+th{
+	color: #B3ADDC;
+	text-align: left;
+	font-weight:800;
+	border-bottom: 1px solid #e8edff;
+	padding: 10px 15px;
+}
+tr:hover td,tr:hover th {color: #938DbC;}
+tr:first-child{
+	height: 50px;
+	text-align: center;
+}
+tr:nth-child(2n){background:#101036;}
+
+/*Поля ввода*/
+*:focus {outline: none;}
+.fieldset{
+	width:500px;
+	margin: 0 auto;
+	padding:2%;
+	border: 2px solid #B3ADDC;
+	border-radius: 10px;	
+}
+input[name="name"],input[name="email"],textarea{
+	width:92%;
+	padding:6px 2%;
+	margin:5px 2%;
+	border:0px;
+	font-size:13px;
+	border-radius: 6px;
+	background: #ddd;
+}
+textarea{
+	height:150px;
+}
+input:focus, textarea:focus {
+    background: #ddd;
+    outline:1px #755;
+    box-shadow: 0 0 3px #aaa;
+}
+input[type = "email"]:focus {
+    background: #aaa;
+    outline:1px #5a5;
+    box-shadow: 0 0 3px blue;
+}
+input[type = "submit"]{
+	margin-left:78%;
+	margin-top:4px;
+	padding:4px 3%;
+	width:20%;
+	font-size:13px;
+	background: #ddd;
+	border-radius: 6px;
+}
+
+/*Картинки*/
+.picture{
+	float:left;
+	width:40%;
+	margin:10px 0px;
+}
+.picture a{
+	width:100%;
+	height:100%;
+	display:flex;
+}
+.picture a img{
+	width: 300px;
+	box-shadow: 0 0 15px white;
+	margin:auto;
+	border-radius: 10px;
+}
+.picture a img:hover{
+	box-shadow: 0 0 3px white;
+}
+
+/*Описание картинки*/
+.discription{
+	float:right;
+	width:60%;
+}
+
+/*Кнопка купить*/
+.button{
+	display:flex;
+	float:right;
+	width:60%;
+}
+a.knopka-buy {
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .5em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  border-radius: 5px;
+  margin:auto;
+  margin-top: 20px;
+} 
+a.knopka-buy:hover { background: rgb(232,95,76); } 
+a.knopka-buy:active { background: rgb(152,15,0); } 
+
+/*Кнопка скачать*/
+a.knopka-down {
+  color: #000026; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #B3ADDC; /* фон кнопки */
+  padding: .5em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  border-radius: 5px;
+  margin:auto;
+  margin-top: 20px;
+} 
+a.knopka-down:hover { background: #c3bDeC; } 
+a.knopka-down:active { background: #a39DcC; } 
+
+/*Отступы в абзацах*/
+.text{
+	margin: 10px;
+	text-align: justify;
+}
+.text:first-letter{
+	margin-left: 30px;
+	font-size: 25px;
+	font-family: serif;
+}
+#footer p{
+	position: absolute;
+	margin:0px;
+	right:10px;
+	top:5px;
+}
+.clear-line{
+	clear:both;
+	margin-top: 10px;
+}
+
+/*Центрирование и размер карты*/
+#map{
+	width: 100%;
+	height:375px;
+}
